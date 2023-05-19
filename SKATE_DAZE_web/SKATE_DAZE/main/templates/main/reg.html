@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'SD/css/reg.css' %}?20230425">
+	<title>{{title}}</title>
+</head>
+<body>
+	<div class="container" >
+		<p class="logo">SKATE DAZE</p>
+		<div class="form">
+			<h2>Регистрация</h2>
+			<form method="post">
+				{% csrf_token %}
+				{% for f in form %}
+				<p class="input">{{ f }}</p>
+				{% endfor %}
+				<button type="submit" class="btn">Зарегистрироваться</button>
+				<span>{{error}}</span>
+			</form>
+		</div>
+	</div>
+	
+</body>

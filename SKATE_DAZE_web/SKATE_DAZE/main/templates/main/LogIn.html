@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'SD/css/reg.css' %}? 20230425">
+	<title>{{title}}</title>
+</head>
+<body>
+	<div class="container">
+		<p class="logo">SKATE DAZE</p>
+		<div class="form">
+			<h2>Вход в аккаунт</h2>
+			<form action="" method="post">
+				<input class='login' type="text" placeholder="E-mail или номер телефона">
+				<input class='login' type="text" placeholder="Пароль">
+				<input type="submit" class="btn" value="Войти">
+				<p>У вас ещё нет аккаунта?
+					<a href="/SignIn">
+						Зарегистрируйтесь!
+					</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	
+	
+</body>

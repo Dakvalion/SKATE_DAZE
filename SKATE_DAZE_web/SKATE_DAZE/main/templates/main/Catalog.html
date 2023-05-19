@@ -1,0 +1,24 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block content%}
+<div class="items">
+    {%if page_obj.has_previous %}
+        <a href="?page={{page_obj.previous_page_number}}" class="arrows"><img src="{% static 'SD/img/arrow1.png' %}" alt="arrow"></a>
+    {% endif %}
+    {% for p in page_obj %}
+        <div class="item_p">
+            <img src="{{p.photo.url}}"> 
+            <p class="name">{{p.title}}</p>
+            <p class="price"> {{p.price}} руб.</p>
+            <div class="price">
+                <a href="#" class="buy_btn">В корзину</a>
+            </div>   
+        </div>
+    {% endfor %}
+    {%if page_obj.has_next %}
+        <a href="?page={{page_obj.next_page_number}}" class="arrows"><img src="{% static 'SD/img/arrow2.png' %}" alt="arrow"></a>
+    {% endif %}
+</div>
+
+{% endblock %}

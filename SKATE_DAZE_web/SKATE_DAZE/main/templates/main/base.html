@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'SD/css/SD.css' %}? 20230425">
+    <title>{{title}}</title>
+</head>
+<body>
+    {% block mainmenu %}
+    <header>
+		<div class ="container" id="beginning">
+			<div class="wrapper">
+				<p class="head">SKATE DAZE</h1>
+				<div class="menu">
+					<a href="/">Главная</a>
+					<a href="/Catalog">Каталог</a>
+					<a href="#">Акции</a>
+					<a href="#">О магазине</a>
+					<a href="#contacts">Контакты</a>
+					<a href="/LogIn">Аккаунт</a>
+					<a href="#"><img src="{% static 'SD/img/basket.png' %}" alt="basket"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+    {% endblock mainmenu %}
+
+    {% block content%}
+    {% endblock %}
+
+    {% block footer %}
+    <footer>
+		<div class="wrap">
+			<p class="logo">SKATE DAZE</p>
+			<div class="links">
+				<a href="#" class="lin">Партнеры</a>
+				<a href="#" class="lin">Магазины</a>
+				<a href="#" class="lin">Доставка</a>
+				<a href="#" class="lin">Поддержка</a>
+				<a href="#" class="lin">Договор оферты</a>
+			</div>
+			<a href="#beginning" class="arrow">
+				<img src="{% static 'SD/img/footerArrow.png' %}" alt="arrow">
+			</a>
+			<div class="contacts" id="contacts">
+				<p class="number">+7(917) ХХХ-ХХ-ХХ</p>
+				<p class="phone">skatedazeofficial@mail.ru</p>
+				<p class="right">© 2023 Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+    {% endblock footer %}
+</body>
+</html>

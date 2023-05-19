@@ -1,0 +1,275 @@
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+h1,span{
+	font-family: "Ubuntu",sans-serif;
+	font-weight: 700;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+
+}
+
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+
+.head {
+	font-size: 17px;
+	font-weight: 700;
+	margin-top: 40px;
+}
+
+.menu {
+	width: 484px;
+	text-decoration-color: black;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 43px;
+	margin-right: 65px;
+
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainBill {
+	width: 490px;
+	margin-top: 212px;
+}
+
+.head2 {
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+.par1 {
+	font-size: 17px;
+	margin-top: 7px;
+	margin-bottom: 30px;
+}
+
+.btn {
+	width: 200px;
+	height: 45px;
+	color: white;
+	background: #B1957F;
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 2px;
+	margin-top: 20px;
+	font-family: "Montserrat",sans-serif;
+}
+
+.btn:hover {
+	background: #B1957F;
+}
+
+.top {
+	z-index: 2;
+	position: absolute;
+	top: 160px;
+	left: 770px;
+}
+
+.rec {
+	z-index: 1;
+	position: absolute;
+	left: 800px;
+	top: 140px;
+
+}
+
+.par2 {
+	margin-top: 270px;
+	font-size: 25px;
+	letter-spacing: 3px;
+	margin-bottom: 0px;
+}
+
+.items {
+	width: 1111px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 100px;
+	
+}
+.price {
+	font-family: "Montserrat",sans-serif;
+	width: 180px;
+	height: 20px;
+
+}
+
+.item {
+	width: 240px;
+	height: 330px;
+	box-shadow: 5px 10px 20px -10px;
+	padding-left: 15px;
+	padding-top: 10px;
+	border: 0.5px solid #ededed;
+	border-radius: 2px;
+
+}
+
+.item_p {
+	width: 240px;
+	height: auto;
+	box-shadow: 5px 10px 20px -10px;
+	padding: 10px 15px 20px 15px;
+	border: 0.5px solid #ededed;
+	border-radius: 2px;
+	margin-left: 30px;
+
+}
+
+
+.buy_btn {
+	width: 85px;
+	height: 20px;
+	background: #FFF;
+	padding: 2px 10px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid #878787;
+	box-shadow: 5px 5px 20px -12px;
+	
+}
+
+
+
+
+.name {
+	font-size: 17px;
+	margin-top: 5px;
+	letter-spacing: 3px;
+}
+
+.secondSec {
+	margin-bottom: 90px;
+}
+
+.arrows {
+	width: 35px;
+	height: 90px;
+	background: #B1957F;
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-right: 0px;
+	border-radius: 2px;
+	margin-top: 85px;
+	
+}
+
+.mail {
+	display: flex;
+	width: 1060px;
+	height: 254px;
+	background: #FBF7F1;
+	justify-content: space-between;
+	border: 3px solid #B9A48B;
+	margin: auto;
+	margin-top: 150px;
+
+}
+
+.text_m {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: 437px;
+	height: 174px;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.para3 {
+	font-size: 25px;
+}
+
+input {
+	background: transparent;
+    border: none;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+
+.line3 {
+	margin-bottom: 10px;
+}
+footer {
+	background: #1C1C1C;
+	color: white;
+	margin: 170px 0px 0px 0px;
+	padding: 100px 90px;
+}
+
+.wrap{
+	display: inline-flex;
+	justify-content: space-between;
+	width: 1300px;	
+}
+
+.lin {
+	color: #bbb;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	height: 130px;
+	font-size: 15px;
+	justify-content: space-between;
+}
+
+.logo {
+	font-family: "Ubuntu",sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	padding-top: 20px;
+}
+
+.contacts {
+	letter-spacing: 1px;
+	padding-bottom: 45px;
+	text-align: right;
+}
+.phone {
+	font-size: 20px;
+}
+
+.arrow {
+	margin-top: 20px;
+}
+
+.number {
+	font-size: 25px;
+}
+
+
+.right {
+	color: #bbb;
+	font-size: 17px;
+}
