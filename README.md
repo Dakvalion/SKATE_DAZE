@@ -2,7 +2,7 @@
 
 A simple website as university project using django framework ✌
 
-[<img  width="900" height="450" align="center" src="![2023-05-19_22-58-48](https://github.com/Dakvalion/SKATE_DAZE/assets/105875517/df33112b-60ab-4647-8eb2-cb8e3c55bbe1)" 
+[<img  width="900" height="450" align="center" src="SKATE_DAZE/Items/preview.png" 
 />](https://www.youtube.com/watch?v=CseQwi-C8vU)
 
 # Backend
