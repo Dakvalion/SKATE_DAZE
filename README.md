@@ -9,7 +9,7 @@ A simple website as university project using django framework ✌
 
 ## Using forms to register new users
 The same technology is used for mailing form ✉
-```{python} 
+```python
 class RegForm(forms.ModelForm):
     class Meta:
         model = Reg
@@ -27,7 +27,7 @@ class RegForm(forms.ModelForm):
 
 ## Navigate between pages using site elements, or ready-made urls
 First, do it with views.py
-```{python}
+```python
 def SD(request):
     error = ''
     if request.method == 'POST':
@@ -42,7 +42,7 @@ def SD(request):
     return render(request, 'main/SD.html', {'title': 'SKATE DAZE', 'form': form, 'error': error})
 ```
 And then, create an url-path to your view
-```{python}
+```python
 urlpatterns = [
     path('', views.SD),
     path('LogIn', views.LogIn),
@@ -52,7 +52,7 @@ urlpatterns = [
 ```
 ## Place your items using Paginator
 Do this in views.py
-```{python}
+```python
 def Catalog(request):
     products = Items.objects.all()
     paginator = Paginator(products, 3)
@@ -67,7 +67,7 @@ def Catalog(request):
 
 For header and footer using base.html file, which extends with a content of the page <br>
 Use static files to add some style for your templates 🎀
-```{html}
+```html
 {% extends 'main/base.html'%}
 {% load static %}
 
@@ -95,6 +95,6 @@ Use static files to add some style for your templates 🎀
 ```
 
 CSS styles applied in this way ( example on base.html)
-```{html}
+```html
 <link rel="stylesheet" href="{% static 'SD/css/SD.css' %}? 20230425">
 ```
